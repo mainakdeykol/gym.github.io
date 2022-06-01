@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mainak's Gym</title>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <style>
+        body {
+            font-family: 'Abril Fatface', cursive;
+            color: white;
+            background-image: url('gym_7.jpg');
+            background-size: 100vw 100vh;
+            background-repeat: no-repeat;
+            margin: 0;
+            padding: 0%;
+        }
+
+        .left {
+            display: inline-block;
+            position: absolute;
+            left: 0px;
+            top: 0px;
+            /* border: 2px solid red; */
+        }
+
+        .mid {
+            position: absolute;
+            display: block;
+            right: 30px;
+            width: 50%;
+            margin: 30px auto;
+            /* border: 2px solid violet; */
+        }
+
+        .right {
+            display: inline-block;
+            position: absolute;
+            right: 30px;
+            bottom: 30px;
+            /* border: 2px solid blue; */
+        }
+
+        .navbar {
+            color:chocolate;
+            display: inline-block;
+            margin: 10px;
+        }
+
+        .navbar li {
+            display: inline-block;
+            font-size: 20px;
+        }
+
+        .navbar li a {
+            color: white;
+            text-decoration: none;
+            padding: 33px 20px;
+        }
+
+        .navbar li a:hover {
+            color:cornflowerblue;
+            text-decoration: underline;
+            padding: 33px 20px;
+        }
+
+        .navbar li a:active {
+            color: lightcoral;
+            text-decoration: underline;
+            padding: 33px 20px;
+        }
+
+        .left img {
+            width: 125px;
+            filter: invert(100%);
+            text-align: center;
+            height: 50px;
+        }
+
+        .btn {
+            font-family: 'Abril Fatface', cursive;
+            color: white;
+            background-color: black;
+            padding: 10px 6px;
+            border-color: antiquewhite;
+            border-radius: 20px;
+            font-size: 15px;
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            background-color: gray;
+        }
+
+        p {
+            text-align: center;
+            line-height: 12px;
+
+        }
+
+        .container {
+            border: 2px solid white;
+            position: absolute;
+            right: 40px;
+            top: 100px;
+            margin: 7px 40px;
+            padding: 10px 202px;
+            border-radius: 29px;
+        }
+
+        .form_group input {
+            font-family: 'Abril Fatface', cursive;
+            text-align: center;
+            display: block;
+            padding: 10px;
+            width: 223px;
+            border: 2px solid black;
+            margin: 15px auto;
+            font-size: 12px;
+            border-radius: 20px;
+        }
+
+        .container h1 {
+            text-align: center;
+        }
+
+        .container button {
+            display: block;
+            width: 50%;
+            margin: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="left">
+            <img src="1.jpg" alt="">
+            <p> Mainak's Gym</p>
+        </div>
+        <div class="mid">
+            <ul class="navbar">
+                <li> <a href="">Home</a> </li>
+                <li> <a href=" "> About Us</a></li>
+                <li> <a href="">Fittness Calculater</a></li>
+                <li> <a href="">Contact Us</a></li>
+
+            </ul>
+        </div>
+        <div class="right">
+            <button class="btn">
+                Call Us Now
+            </button>
+            <button class="btn">
+                Email Us
+            </button>
+
+        </div>
+    </header>
+    <div class="container">
+        <h3>Fill The Form To Join Gym</h3>
+        <form action="gym.php">
+            <div class="form_group">
+                <input type="text" name="" placeholder="Enter Your Name">
+            </div>
+            <div class="form_group">
+                <input type="text" name="" placeholder="Enter Your Age">
+            </div>
+            <div class="form_group">
+                <input type="text" name="" placeholder="Enter Your Phone Number">
+            </div>
+            <div class="form_group">
+                <input type="text" name="" placeholder="Enter Your Locality">
+            </div>
+            <div class="form_group">
+                <input type="text" name="" placeholder="Enter Your Email">
+            </div>
+            <button class="btn"> Submit</button>
+        </form>
+    </div>
+</body>
+
+</html>
